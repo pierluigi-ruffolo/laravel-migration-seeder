@@ -1,0 +1,20 @@
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+}
+
+header {
+    background-color: #1a1a1a;
+    border-bottom: 4px solid #ffc107;
+}

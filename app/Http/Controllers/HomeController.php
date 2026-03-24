@@ -11,8 +11,9 @@ class HomeController extends Controller
     {
 
         $currentDateTime = now();
-        $trains = Train::where('departure_time', '>=', $currentDateTime)->get();
-
+        $trains = Train::where('departure_time', '>=', $currentDateTime)
+            ->orderBy('departure_time', 'asc')
+            ->get();
 
         return view('home', compact('trains'));
     }
